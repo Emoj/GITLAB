@@ -7,7 +7,7 @@ sbit Mmc_Chip_Select_Direction at DDRG.B1;
 
 char hour, minute, second;
 
-char file_contents[10] = "XX:XX:XX\n";
+char file_contents[10] = "XX_XX_XX\n";
 
 unsigned long i;
 
