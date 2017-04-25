@@ -90,7 +90,7 @@ void M_Create_Multiple_Files() {
 
 //M-M-M--------- Opens an existing file and rewrites it
 void M_Open_File_Rewrite() {
-  filename[7] = 'C';
+  filename[16] = 'C';
   Mmc_Fat_Assign(&filename, 0);
   Mmc_Fat_Rewrite();
   for(loop = 1; loop <= 55; loop++) {
@@ -112,7 +112,7 @@ void M_Open_File_Append() {
 
 //M-M-M--------- Opens an existing file, reads data from it and puts it to USART
 void M_Open_File_Read() {
-  filename[7] = 'B';
+  filename[16] = 'B';
   Mmc_Fat_Assign(&filename, 0);
   Mmc_Fat_Reset(&size);                 // To read file, procedure returns size of file
   for (i = 1; i <= size; i++) {
