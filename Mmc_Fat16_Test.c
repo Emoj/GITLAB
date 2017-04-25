@@ -191,9 +191,9 @@ void M_Create_Swap_File() {
 void main() {
      // we will use PORTC to signal test end
      DDRC  = 0xFF;
-     PORTC = 0;  
+     PORTC = 0xFF;  
      //--- set up USART for the file read
-     UART1_Init(19200);
+     UART1_Init(9600);
      Delay_100ms();
      //--- init the FAT library
      SPI1_Init_Advanced(_SPI_MASTER, _SPI_FCY_DIV128, _SPI_CLK_LO_LEADING);
